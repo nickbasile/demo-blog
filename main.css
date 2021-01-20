@@ -1,0 +1,166 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+header nav {
+  padding: .5rem 1rem;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0, .2);
+}
+
+header nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: bold;
+  margin-left: 24px;
+}
+
+.nav-link:hover {
+  color: #4f4f4f;
+}
+
+.article-meta {
+  color: #4f4f4f;
+  font-size: 14px;
+}
+
+.topic {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#hero-article {
+  margin: 1rem 1rem 0;
+  max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  #hero-article {
+    display: flex;
+    margin: 1rem 1rem 0;
+  }
+
+  #hero-article img {
+    width: 60%;
+  }
+
+  #hero-article section {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #hero-article {
+    margin: 1rem auto 0;
+  }
+}
+
+#hero-article h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+#hero-article p:nth-of-type(2) {
+  font-size: 21px;
+  color: #4f4f4f;
+  margin: .5rem 0 0;
+  line-height: 1.5;
+}
+
+#hero-article p:last-of-type {
+  font-size: 16px;
+  color: #888888;
+  margin: .8rem 0 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin: 2rem 1rem;
+  max-width: 1000px;
+}
+
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    margin: 2rem auto;
+  }
+}
+
+main article h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+
+main article p:nth-of-type(2) {
+  font-size: 20px;
+  color: #4f4f4f;
+  margin: .5rem 0 0;
+  line-height: 1.5;
+}
+
+main article p:last-of-type {
+  font-size: 16px;
+  color: #888888;
+  margin: .8rem 0 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 1rem 2rem;
+  padding: 1rem;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, .2);
+  border-radius: 6px;
+}
+
+@media (min-width: 1000px) {
+  footer {
+    margin: 0 auto 2rem;
+  }
+}
+
+footer section:last-of-type {
+  margin-left: 20px;
+}
+
+footer img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.super-cool {
+  color: red;
+}
